@@ -1,0 +1,22 @@
+<?php
+/*
+membuat fungsi
+*/
+function hitung_nilai($nilai_uts, $nilai_uas, $nilai_tugas) {
+    define ('NILAI_UTS', 0.25);
+    define ('NILAI_UAS', 0.30);
+    define ('NILAI_TUGAS', 0.45);
+    $niali_akhir = $nilai_uts * NILAI_UTS + $nilai_uas * NILAI_UAS + $nilai_tugas * NILAI_TUGAS
+    return $niali_akhir;
+}
+
+function kelulusan($nilai){
+    define ('NILAI_MINiMAL', 60);
+    if ($nilai >= NILAI_MINIMAL) {
+        return "Lulus";
+    }
+    else{
+        return "Tidak Lulus";
+    }
+}
+?>
